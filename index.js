@@ -17,31 +17,17 @@ const countEveryOdd = (num) => {
 };
 
 // 3
-const isNegative = (num) => {
-  if (num < 0) {
-    return true;
-  }
-
-  return false;
-};
+const isNegative = (num) => num < 0;
 
 // 4
-const betweenFiveAndTwenty = (num) => {
-  if (num >= 5 && num <= 20) {
-    return true;
-  }
-
-  return false;
-};
+const betweenFiveAndTwenty = (num) => num >= 5 && num <= 20;
 
 // 5
 const sumOfThreeAndFive = () => {
   let total = 0;
 
   for (let i = 0; i < 1000; i++) {
-    if (i % 3 === 0) {
-      total += i;
-    } else if (i % 5 === 0) {
+    if (i % 3 === 0 || i % 5 === 0) {
       total += i;
     }
   }
@@ -50,13 +36,7 @@ const sumOfThreeAndFive = () => {
 };
 
 // 6
-const isAllLowerCase = (str) => {
-  if (str === str.toLowerCase()) {
-    return true;
-  }
-
-  return false;
-};
+const isAllLowerCase = (str) => str === str.toLowerCase();
 
 // BONUS
 const countMultiplesOfFive = (arr) => {
